@@ -1,0 +1,222 @@
+.what {
+
+    padding-bottom: 110px;
+
+    &__choose__list {
+        display: none;
+    }
+
+    &__title {
+        max-width: 240px;
+        color: #83888F;
+        font-family: Fraunces;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 28px;
+
+        &__block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 32px;
+
+            &::after {
+                content: "";
+                background-image: url(../../img/how_title_img.svg);
+                background-repeat: no-repeat;
+                display: inline-block;
+                width: 18.191px;
+                height: 11.924px;
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__item {
+        padding: 24px 25px;
+        background-color: #F4F1EB;
+        border-radius: 8px;
+
+        &:nth-child(2) {
+            background-color: #0E8784;
+        }
+
+        &__title {
+            color: #333D4B;
+            font-family: Fraunces;
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 32px;
+            margin-bottom: 8px;
+
+            &__second {
+                color: #fff;
+            }
+        }
+
+        &__text {
+            max-width: 278px;
+            color: #333D4B;
+            font-family: Barlow;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+
+            &__second {
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .what {
+
+        padding-bottom: 100px;
+
+        &__choose__list {
+            display: none;
+        }
+
+        &__title {
+            max-width: 506px;
+            font-size: 32px;
+            line-height: 48px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        &__item {
+            padding: 32px 26px 84px 25px;
+
+            &__title {
+                margin-bottom: 24px;
+            }
+
+            &__text {
+                max-width: 172px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .what {
+
+        padding: 0px 45px 88px 45px;
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            gap: 125px;
+        }
+
+        &__title {
+            max-width: 632px;
+            font-size: 40px;
+
+            &__block {
+                max-width: 730px;
+                display: flex;
+                align-items: center;
+                gap: 79.59px;
+            }
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 23px;
+            margin-top: 56px;
+
+            &__block {
+                max-width: 730px;
+            }
+        }
+
+        &__item {
+            padding: 32px 28px 84px 28px;
+
+            &__text {
+                font-size: 16px;
+                line-height: 26px;
+            }
+
+            &:not(:nth-child(2)):hover {
+                cursor: pointer;
+                background-color: #FDD6BA;
+            }
+        }
+
+        &__choose {
+
+            &__item:not(:last-child) {
+                border-bottom: 1px solid rgb(130, 135, 143, 0.25);
+            }
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            &__item {
+                display: flex;
+                align-items: center;
+                max-width: 255px;
+                padding-bottom: 24px;
+
+                &__number {
+                    color: rgb(132, 137, 144, 0.5);
+                    font-family: Fraunces;
+                    font-size: 24px;
+                    font-weight: 900;
+                    line-height: 32px;
+                    margin-right: 28.5px;
+
+                    &__first {
+                        color: rgb(14, 134, 132, 0.5);
+                    }
+
+                    &__last {
+                        color: #83888F;
+                    }
+                }
+
+                &__title {
+                    color: rgb(51, 61, 74, 0.5);
+                    font-family: Fraunces;
+                    font-size: 24px;
+                    font-weight: 900;
+                    line-height: 32px;
+                    white-space: nowrap;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: rgb(51, 61, 74, 0.7);
+                    }
+                }
+
+                &__title__last {
+                    color: #333D4B;
+                }
+            }
+        }
+    }
+
+    .what__choose__list {
+        opacity: 0;
+    }
+}

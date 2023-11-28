@@ -1,0 +1,67 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    white-space: nowrap;
+    border: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 80px;
+    padding-left: 80px;
+
+    @media screen and (max-width: 992px) {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    
+}
